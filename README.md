@@ -1,5 +1,5 @@
 ## Contribution grid
-![Tron Grid](https://raw.githubusercontent.com/TON_COMPTE/TON_COMPTE/main/assets/tron-grid.svg)
+![Tron Grid](./assets/tron-grid.svg)
 
 <!--
 **GizMoDevOne/GizMoDevOne** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
