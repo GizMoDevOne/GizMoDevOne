@@ -22,7 +22,7 @@ jobs:
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
           animation: hilbert
-          speed: "1.5"
+          speed: "1.2"
           particles: "5"
           trail_length: "30"
           electric: "true"
