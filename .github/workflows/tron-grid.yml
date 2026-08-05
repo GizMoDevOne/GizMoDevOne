@@ -16,13 +16,14 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Generate contribution energy grid
-        uses: GizMoDevOne/github-tron-grid@v1
+        uses: GizMoDevOne/github-tron-grid@v2
         with:
           github_user: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           theme: tron
           animation: astar
           speed: "1.2"
+          particles: "5"
           output: assets/tron-grid.svg
 
       - name: Commit updated SVG
