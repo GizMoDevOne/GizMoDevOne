@@ -23,6 +23,7 @@ jobs:
           theme: tron
           animation: astar
           speed: "1.2"
+          particles: "5"
           output: assets/tron-grid.svg
 
       - name: Commit updated SVG
