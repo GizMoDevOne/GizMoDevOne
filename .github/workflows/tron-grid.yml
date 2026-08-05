@@ -21,7 +21,7 @@ jobs:
           github_user: ${{ github.repository_owner }}
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
-          animation: astar
+          animation: horizontal
           speed: "1.5"
           particles: "5"
           trail_length: "30"
