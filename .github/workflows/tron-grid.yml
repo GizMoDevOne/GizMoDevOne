@@ -22,7 +22,7 @@ jobs:
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
           animation: astar
-          speed: "1.2"
+          speed: "1.5"
           particles: "5"
           output: assets/tron-grid.svg
 
