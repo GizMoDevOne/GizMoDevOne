@@ -23,17 +23,16 @@ jobs:
           theme: tron
           animation: astar
           speed: "1.2"
-          particles: "5"
           output: assets/tron-grid.svg
 
       - name: Commit updated SVG
         shell: bash
         run: |
-          git add assets/tron-grid.svg
-          if git diff --cached --quiet; then
+          if git diff --quiet -- assets/tron-grid.svg; then
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/tron-grid.svg
           git commit -m "chore: update Tron contribution grid"
           git push
