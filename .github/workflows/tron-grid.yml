@@ -21,7 +21,7 @@ jobs:
           github_user: ${{ github.repository_owner }}
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
-          animation: asta
+          animation: astar
           speed: "1.5"
           particles: "5"
           output: assets/tron-grid.svg
