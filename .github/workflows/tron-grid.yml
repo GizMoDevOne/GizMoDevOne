@@ -24,6 +24,8 @@ jobs:
           animation: astar
           speed: "1.5"
           particles: "5"
+          trail_length: "30"
+          electric: "true"
           output: assets/tron-grid.svg
 
       - name: Commit updated SVG
