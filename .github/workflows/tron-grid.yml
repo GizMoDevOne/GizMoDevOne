@@ -21,19 +21,19 @@ jobs:
           github_user: ${{ github.repository_owner }}
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
-          animation: astar
-          speed: "1.5"
-          particles: "5"
+          animation: random-walk
+          speed: "2"
+          particles: "10"
           output: assets/tron-grid.svg
 
       - name: Commit updated SVG
         shell: bash
         run: |
-          if git diff --quiet -- assets/tron-grid.svg; then
+          git add assets/tron-grid.svg
+          if git diff --cached --quiet; then
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/tron-grid.svg
           git commit -m "chore: update Tron contribution grid"
           git push
