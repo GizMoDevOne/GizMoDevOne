@@ -19,7 +19,7 @@ jobs:
         uses: GizMoDevOne/github-tron-grid@v2
         with:
           github_user: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
           animation: astar
           speed: "1.2"
