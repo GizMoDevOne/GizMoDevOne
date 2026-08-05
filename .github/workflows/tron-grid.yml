@@ -21,7 +21,7 @@ jobs:
           github_user: ${{ github.repository_owner }}
           github_token: ${{ secrets.TRON_TOKEN }}
           theme: tron
-          animation: random-walk
+          animation: dijkstra
           speed: "2"
           particles: "10"
           output: assets/tron-grid.svg
